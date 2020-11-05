@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<lang id="en_US">
+	<section id="item.names">
+		<text id="strange_matter">Strange Matter</text>
+    </section>
+	<section id="oldone_fight">
+		<!--
+			-Access original lines of dialogue for scenes that happened in the past (Old One fight, etc.)
+-If I can't get an Arsonist McStabby animation, then I can have this conversation in the Old One cave; just need to save gear arrangement (and have a default)
+-Override Alch's Death's Door dialogue if you betray him
+		-->
+		<text id="arrival1">I remember this conversation! So the time travel really worked!</text>
+		<text id="arrival2">I'm too late to keep them from bothering the Old One. Could I still change this?[pause=4] Should I?</text>x
+		<text id="work_together">Fight With the Alchemist</text>
+		<text id="abandon">Let Alchemist Fight Alone</text>
+		<text id="nothing">Do Nothing</text>
+		<text id="nothing_survive">Good, we both still made it... I should return to the future before they notice me.</text>		
+		<text id="nothing_death">Just like I remembered...[pause=4] I wonder if I could have saved him...</text>
+		<text id="abandon2">Psst! Hey, past me! You have to let him fight alone!</text>
+		<text id="abandon3">Stand back! This fight is not for the inexperienced!</text>
+		<text id="abandon4">What was that for? He might have survived if I'd fought with him!</text> 
+		<text id="abandon5">His death was a...[pause=2] necessary sacrifice. You'll understand later.</text>
+		<text id="abandon6">I really hope this was worth it...</text>
+		<text id="fight">NO! Wait! I'll fight with you!</text>
+		<text id="after1">So you're from the future? And I would have died if you hadn't interfered?</text>
+		<text id="after2">Yes. I'd hoped we'd be able to stop the Old One from sending the signal at all, but at least </text>
+
+	</section>
+</lang>

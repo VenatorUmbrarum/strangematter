@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mod>
+<name>Strange Matter</name>
+<description>Discover a new form of magical matter that can allow you to travel back in time. Will you fix your past mistakes, or ruin everything you've worked for?</description>
+<author>VenatorUmbrarum</author>
+<version>1.0.0</version>
+<init>
+	<tilesheet id="strange_matter.png" width="16" height="10"/>
+	<tile id="strange_matter.ico" sheet="strange_matter.png" x="0" />
+	<item id="strange_matter" type="resource" cost="2000" weight="2" icon="strange_matter.ico" animation="item10" />
+	<action>trace("Does tracing work??")</action>
+	<include id="lang/languages.xml" />
+</init>
+</mod>
