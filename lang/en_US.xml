@@ -3,6 +3,14 @@
 	<section id="item.names">
 		<text id="strange_matter">Strange Matter</text>
     </section>
+	<section id="research_quest">
+		<!--These lines might fit the Alchemist, but probably not the Professor...-->
+		<text id="intro">Incredible, it seems some magic is able to manipulate time!</text>
+		<!--I should also allow strange matter to speed up production of other things, like fertilizer for farms-->
+		<!--This would be the equivalent of the apple scene in Doctor Strange!-->
+		<!--also uncrafting things-->
+		<text id="intro1">Perhaps we can find more applications! This requires more research!</text>
+	</section>
 	<section id="oldone_fight">
 		<!--
 			-Access original lines of dialogue for scenes that happened in the past (Old One fight, etc.)
@@ -21,7 +29,16 @@
 		<text id="abandon4">What was that for? He might have survived if I'd fought with him!</text> 
 		<text id="abandon5">His death was a...[pause=2] necessary sacrifice. You'll understand later.</text>
 		<text id="abandon6">I really hope this was worth it...</text>
+		<text id="abandon7">What have we done? Now they will return. But I don't understand, are you working for them too?</text>
 		<text id="fight">NO! Wait! I'll fight with you!</text>
+
+		<text id="after1"></text>
+		<text id="after2"></text>
+
+		<text id="after1">So you're from the future? How were you able to travel back in time?</text>
+		<text id="after3"></text>
+		<text id="after3"></text>
+
 		<text id="after1">So you're from the future? And I would have died if you hadn't interfered?</text>
 		<text id="after2">Yes. I'd hoped we'd be able to stop the Old One from sending the signal at all, but at least </text>
 

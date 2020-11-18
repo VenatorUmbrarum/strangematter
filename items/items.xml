@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <tilesheet id="strange_matter.png" width="16" height="10"/>
+	<tile id="strange_matter.ico" sheet="strange_matter.png" x="0" />
+	<item id="strange_matter" type="resource" cost="2000" weight="2" icon="strange_matter.ico" animation="item10" />
+
+    <!--
+		<recipe id="research_strange_matter" creates="strange_matter" title="common.research_item{item:>>item.names.strange_matter}" type="research" fuel_cost="1000" available="<has seen: time book> && !getFlag('strange_matter')">
+			//Where should this be available? I am leaning to on board the mobile lab...
+			<onComplete><action>queue.removeItems(this, queue.getCount(this, false), false); setFlag('strange_matter', true);</action><show tooltip="popup" text="common.research_complete{item:[item=strange_matter]}{structure:[color=770000][text=common.exo_factory][/color]}" x="0.5" y="0.25" hold="80" /></onComplete>
+		</recipe>
+		<recipe id="research_exo_sword" creates="exo_sword" title="common.research_item{item:>>item.names.exo_sword}" type="research" fuel_cost="1000" available="getFlag('colony_world') && !getFlag('exo_sword')">
+			<onComplete><action>queue.removeItems(this, queue.getCount(this, false), false); setFlag('exo_sword', true);</action><show tooltip="popup" text="common.research_complete{item:[item=exo_sword]}{structure:[color=770000][text=common.exo_factory][/color]}" x="0.5" y="0.25" hold="80" /></onComplete>
+		</recipe>
+	-->
+</data>

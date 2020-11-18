@@ -1,14 +1,70 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <mod>
 <name>Strange Matter</name>
-<description>Discover a new form of magical matter that can allow you to travel back in time. Will you fix your past mistakes, or ruin everything you've worked for?</description>
+<description>Discover a new form of magical matter that allows you to travel back in time. Will you fix your past mistakes, or undo everything you've worked for?</description>
 <author>VenatorUmbrarum</author>
-<version>1.0.0</version>
+<version>Alpha 1.0.0</version>
 <init>
-	<tilesheet id="strange_matter.png" width="16" height="10"/>
-	<tile id="strange_matter.ico" sheet="strange_matter.png" x="0" />
-	<item id="strange_matter" type="resource" cost="2000" weight="2" icon="strange_matter.ico" animation="item10" />
-	<action>trace("Does tracing work??")</action>
+
+	<flag id="test" />
+
+	<procedure id="testprocedure">
+		<action>setFlag('test', false)</action>
+		<action>trace("in procedure");</action>
+		<section if="true">
+			<action>trace("true");</action>
+		</section>
+		<section if="false">
+			<action>trace("false");</action>
+		</section>
+		<section if="getFlag('test')">
+			<action>trace("test true");</action>
+		</section>
+		<section if="!getFlag('test')">
+			<action>trace("test false");</action>
+		</section>
+		<action>setFlag('test', true)</action>
+		<section if="getFlag('test')">
+			<action>trace("test true 2");</action>
+		</section>
+		<section if="!getFlag('test')">
+			<action>trace("test false 2");</action>
+		</section>
+	</procedure>
+
+	<procedure id="defineFunction">
+		<action>
+			function test() {
+				trace("Hello, world");
+			}
+		</action>
+	</procedure>
+
+	<action>
+		function test2() {
+			trace("Arma virumque cano, Troiae qui primus ab oris");
+		}
+	</action>
+
+	<procedure id="functionTest">
+		<action>test();</action>
+	</procedure>
+	<procedure id="functionTest2">
+		<action>test2();</action>
+	</procedure>
+
+	<run procedure="defineFunction" />
+	<run procedure="functionTest" />
+	<run procedure="functionTest2" />
+
+	<procedure id="frameTest"></procedure>
+
+	<!--
+		getContainer().stage.addEventListener("enterFrame", test2)
+		getContainer().stage.removeEventListener("enterFrame", test2)
+	-->
+
 	<include id="lang/languages.xml" />
+	<include id="items/items.xml" />
 </init>
 </mod>
